@@ -1,0 +1,3 @@
+sensor,DSP Version Number,HCI Version,Device Status,Product Model,Inverter Single/Three Phase Type,Rated Power,Power Curve Version,Safety Country,SN Number,,,,,,,,,,,,,,,,,,,,,
+507,220,002B,Online,47,1,30.0kW,4,User-define,110470185160082,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

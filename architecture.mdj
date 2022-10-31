@@ -1,0 +1,666 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				},
+				{
+					"_type": "FCFlowchart",
+					"_id": "AAAAAAGDUMPAk14Ae9M=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Flowchart1",
+					"ownedElements": [
+						{
+							"_type": "FCFlowchartDiagram",
+							"_id": "AAAAAAGDUMPAk14BTCM=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "FlowchartDiagram1",
+							"ownedViews": [
+								{
+									"_type": "FCDataView",
+									"_id": "AAAAAAGDUMP3X14H8vs=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUMP3X14FCNc="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGDUMP3X14IF7U=",
+											"_parent": {
+												"$ref": "AAAAAAGDUMP3X14H8vs="
+											},
+											"font": "Arial;13;0",
+											"left": 202,
+											"top": 170,
+											"width": 45,
+											"height": 39,
+											"text": "solar panel data",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 176,
+									"top": 160,
+									"width": 97,
+									"height": 59,
+									"nameLabel": {
+										"$ref": "AAAAAAGDUMP3X14IF7U="
+									}
+								},
+								{
+									"_type": "FCDataView",
+									"_id": "AAAAAAGDUMRoz14RWvk=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUMRoz14PdLc="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGDUMRoz14S0tA=",
+											"_parent": {
+												"$ref": "AAAAAAGDUMRoz14RWvk="
+											},
+											"font": "Arial;13;0",
+											"left": 559,
+											"top": 162,
+											"width": 35,
+											"height": 26,
+											"text": "weather data",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 536,
+									"top": 152,
+									"width": 81,
+									"height": 65,
+									"nameLabel": {
+										"$ref": "AAAAAAGDUMRoz14S0tA="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAGDUMTDql4cOIQ=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUMTDql4amzA="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGDUMTDql4dv60=",
+											"_parent": {
+												"$ref": "AAAAAAGDUMTDql4cOIQ="
+											},
+											"font": "Arial;13;0",
+											"left": 362,
+											"top": 258,
+											"width": 57.80810546875,
+											"height": 26,
+											"text": "Prediction model",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 352,
+									"top": 248,
+									"width": 77.80810546875,
+									"height": 46,
+									"nameLabel": {
+										"$ref": "AAAAAAGDUMTDql4dv60="
+									}
+								},
+								{
+									"_type": "FCDatabaseView",
+									"_id": "AAAAAAGDUMX9sV40XXE=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUMX9sV4ycE0="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGDUMX9sV41c7o=",
+											"_parent": {
+												"$ref": "AAAAAAGDUMX9sV40XXE="
+											},
+											"font": "Arial;13;0",
+											"left": 362,
+											"top": 370,
+											"width": 62.8798828125,
+											"height": 1,
+											"text": "Database",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 352,
+									"top": 352,
+									"width": 82.8798828125,
+									"height": 33,
+									"nameLabel": {
+										"$ref": "AAAAAAGDUMX9sV41c7o="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAGDUMgLKV4/RDM=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUMgLKV49Dzg="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGDUMgLKV5A7Xg=",
+											"_parent": {
+												"$ref": "AAAAAAGDUMgLKV4/RDM="
+											},
+											"font": "Arial;13;0",
+											"left": 362,
+											"top": 474,
+											"width": 67.91357421875,
+											"height": 39,
+											"text": "Train the model dynamically",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 352,
+									"top": 464,
+									"width": 87.91357421875,
+									"height": 59,
+									"nameLabel": {
+										"$ref": "AAAAAAGDUMgLKV5A7Xg="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAGDUMs6aV5JBdo=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUMs6aV5Hnng="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGDUMs6aV5K9ug=",
+											"_parent": {
+												"$ref": "AAAAAAGDUMs6aV5JBdo="
+											},
+											"font": "Arial;13;0",
+											"left": 130,
+											"top": 402,
+											"width": 56.3671875,
+											"height": 52,
+											"text": "Demand analysis and prediction",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 120,
+									"top": 392,
+									"width": 76.3671875,
+									"height": 72,
+									"nameLabel": {
+										"$ref": "AAAAAAGDUMs6aV5K9ug="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAGDUM91k15Up3c=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUM91kl5Spf4="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGDUM91k15V/Gg=",
+											"_parent": {
+												"$ref": "AAAAAAGDUM91k15Up3c="
+											},
+											"model": {
+												"$ref": "AAAAAAGDUM91kl5Spf4="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 256,
+											"top": 230,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGDUM91k15Up3c="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGDUMTDql4cOIQ="
+									},
+									"tail": {
+										"$ref": "AAAAAAGDUMP3X14H8vs="
+									},
+									"lineStyle": 2,
+									"points": "256:218;256:251;352:251",
+									"nameLabel": {
+										"$ref": "AAAAAAGDUM91k15V/Gg="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAGDUM+WLl5d4kA=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUM+WLV5bPsQ="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGDUM+WLl5ewwI=",
+											"_parent": {
+												"$ref": "AAAAAAGDUM+WLl5d4kA="
+											},
+											"model": {
+												"$ref": "AAAAAAGDUM+WLV5bPsQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 535,
+											"top": 261,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGDUM+WLl5d4kA="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGDUMTDql4cOIQ="
+									},
+									"tail": {
+										"$ref": "AAAAAAGDUMRoz14RWvk="
+									},
+									"lineStyle": 2,
+									"points": "536:216;536:252;429:252",
+									"nameLabel": {
+										"$ref": "AAAAAAGDUM+WLl5ewwI="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAGDUNA8NF5pKJc=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUNA8NF5ngUk="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGDUNA8NF5q6T4=",
+											"_parent": {
+												"$ref": "AAAAAAGDUNA8NF5pKJc="
+											},
+											"model": {
+												"$ref": "AAAAAAGDUNA8NF5ngUk="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 404,
+											"top": 315,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGDUNA8NF5pKJc="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGDUMX9sV40XXE="
+									},
+									"tail": {
+										"$ref": "AAAAAAGDUMTDql4cOIQ="
+									},
+									"lineStyle": 2,
+									"points": "390:293;390:352",
+									"nameLabel": {
+										"$ref": "AAAAAAGDUNA8NF5q6T4="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAGDUNBvMV5yq6c=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUNBvMV5wdMQ="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGDUNBvMV5z69E=",
+											"_parent": {
+												"$ref": "AAAAAAGDUNBvMV5yq6c="
+											},
+											"model": {
+												"$ref": "AAAAAAGDUNBvMV5wdMQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 406,
+											"top": 417,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGDUNBvMV5yq6c="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGDUMgLKV4/RDM="
+									},
+									"tail": {
+										"$ref": "AAAAAAGDUMX9sV40XXE="
+									},
+									"lineStyle": 2,
+									"points": "392:384;392:464",
+									"nameLabel": {
+										"$ref": "AAAAAAGDUNBvMV5z69E="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAGDUNCMYV57OKY=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"model": {
+										"$ref": "AAAAAAGDUNCMYV55v90="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGDUNCMYV58A+k=",
+											"_parent": {
+												"$ref": "AAAAAAGDUNCMYV57OKY="
+											},
+											"model": {
+												"$ref": "AAAAAAGDUNCMYV55v90="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 351,
+											"top": 426,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGDUNCMYV57OKY="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGDUMs6aV5JBdo="
+									},
+									"tail": {
+										"$ref": "AAAAAAGDUMX9sV40XXE="
+									},
+									"lineStyle": 2,
+									"points": "352:384;352:417;195:417",
+									"nameLabel": {
+										"$ref": "AAAAAAGDUNCMYV58A+k="
+									}
+								},
+								{
+									"_type": "UMLTextBoxView",
+									"_id": "AAAAAAGDUNFRS16Cnx4=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"font": "Arial;13;0",
+									"left": 72,
+									"top": 144,
+									"width": 67.0908203125,
+									"height": 103,
+									"text": "DC power,AC power, voltage, current, power, frequency"
+								},
+								{
+									"_type": "UMLTextBoxView",
+									"_id": "AAAAAAGDUNKtMV6NwsA=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"font": "Arial;13;0",
+									"left": 656,
+									"top": 128,
+									"width": 69.2490234375,
+									"height": 77,
+									"text": "temp,wind speed, humidity, cloud coverage"
+								},
+								{
+									"_type": "FreelineEdgeView",
+									"_id": "AAAAAAGDUNMpDV6SRvs=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"font": "Arial;13;0",
+									"lineStyle": 1,
+									"points": "608:176;656:157"
+								},
+								{
+									"_type": "FreelineEdgeView",
+									"_id": "AAAAAAGDUNQq3V6je4M=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"font": "Arial;13;0",
+									"lineStyle": 1,
+									"points": "136:184;189:191"
+								},
+								{
+									"_type": "UMLTextBoxView",
+									"_id": "AAAAAAGDUNRyt16om/o=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"font": "Arial;13;0",
+									"left": 8,
+									"top": 352,
+									"width": 89,
+									"height": 142,
+									"text": "solar power generation and usage, energy and revenue generation in future"
+								},
+								{
+									"_type": "FreelineEdgeView",
+									"_id": "AAAAAAGDUNVuAF6ydho=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMPAk14BTCM="
+									},
+									"font": "Arial;13;0",
+									"lineStyle": 1,
+									"points": "96:416;120:416"
+								}
+							]
+						},
+						{
+							"_type": "FCData",
+							"_id": "AAAAAAGDUMP3X14FCNc=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "solar panel data",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAGDUM91kl5Spf4=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMP3X14FCNc="
+									},
+									"source": {
+										"$ref": "AAAAAAGDUMP3X14FCNc="
+									},
+									"target": {
+										"$ref": "AAAAAAGDUMTDql4amzA="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCData",
+							"_id": "AAAAAAGDUMRoz14PdLc=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "weather data",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAGDUM+WLV5bPsQ=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMRoz14PdLc="
+									},
+									"source": {
+										"$ref": "AAAAAAGDUMRoz14PdLc="
+									},
+									"target": {
+										"$ref": "AAAAAAGDUMTDql4amzA="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAGDUMTDql4amzA=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "Prediction model",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAGDUNA8NF5ngUk=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMTDql4amzA="
+									},
+									"source": {
+										"$ref": "AAAAAAGDUMTDql4amzA="
+									},
+									"target": {
+										"$ref": "AAAAAAGDUMX9sV4ycE0="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCDatabase",
+							"_id": "AAAAAAGDUMX9sV4ycE0=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "Database",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAGDUNBvMV5wdMQ=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMX9sV4ycE0="
+									},
+									"source": {
+										"$ref": "AAAAAAGDUMX9sV4ycE0="
+									},
+									"target": {
+										"$ref": "AAAAAAGDUMgLKV49Dzg="
+									}
+								},
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAGDUNCMYV55v90=",
+									"_parent": {
+										"$ref": "AAAAAAGDUMX9sV4ycE0="
+									},
+									"source": {
+										"$ref": "AAAAAAGDUMX9sV4ycE0="
+									},
+									"target": {
+										"$ref": "AAAAAAGDUMs6aV5Hnng="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAGDUMgLKV49Dzg=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "Train the model dynamically"
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAGDUMs6aV5Hnng=",
+							"_parent": {
+								"$ref": "AAAAAAGDUMPAk14Ae9M="
+							},
+							"name": "Demand analysis and prediction",
+							"documentation": "-solar  power generation and usage\n-energy generated in future  and how to increase the energy generated and revenue\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}
