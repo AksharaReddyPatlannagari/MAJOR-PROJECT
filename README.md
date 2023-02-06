@@ -8,6 +8,8 @@ https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in
 
 https://towardsdatascience.com/why-feature-correlation-matters-a-lot-847e8ba439c4 - correlation and linear regression
 
+https://builtin.com/data-science/when-and-why-standardize-your-data 
+
 ## Ideas
 
 classify to similar time intervals
