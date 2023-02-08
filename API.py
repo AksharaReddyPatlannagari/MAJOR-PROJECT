@@ -10,7 +10,7 @@ try:
   
   # Parse the results as CSV
   CSVText = pd.read_csv(ResultBytes)
-  CSVText.to_csv('temppp.csv')
+  CSVText.to_csv('predicted_weather.csv')
         
 except urllib.error.HTTPError  as e:
   ErrorInfo= e.read().decode() 
