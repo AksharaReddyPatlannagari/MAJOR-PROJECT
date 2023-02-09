@@ -22,13 +22,14 @@ def obj_to_DT(s,x):
     s[x]= pd.to_datetime(s[x],dayfirst=True)
     return s
 
-def dataSetProcessing():
+def dataSetProcessing(date):
     final=pd.read_csv("finalData.csv")
     final.dropna(inplace=True)
     final.drop('Unnamed: 0',axis=1,inplace=True)
     final.rename(columns = {'Date':'no_of_days'}, inplace = True)
     final.drop(['DC total voltage (v)','DC total current(A)','AC total voltage (v)','windspeed','precip','windgust','no_of_days',],inplace=True,axis=1)
-    return final
+    res=model_fitting(final,date)
+    return(str(res))
 
 def model_fitting(final,date):
     X=final.drop('Daily Generation (Active)(kWh)',axis=1)
@@ -137,6 +138,3 @@ def get_solar_output(date):
     pred_result=pd.DataFrame(pred_result)
     return(pred_result)
     
-
-final=dataSetProcessing()
-res=model_fitting(final,'2023-02-09')
