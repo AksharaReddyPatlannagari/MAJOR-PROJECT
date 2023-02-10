@@ -20,7 +20,7 @@ def index():
 @app.route('/sol', methods=['POST','GET'])
 def getDate():
   date=request.form['date']
-  return ('The total solar generation on '+date+' is:  ' +solar_prediction.dataSetProcessing(date))
+  return ('The total solar generation on '+date+' is:  ' +solar_prediction.dataSetProcessing(date)+' kWh ')
 
 if __name__ == '_main_':
     app.run(debug=True)
