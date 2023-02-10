@@ -35,6 +35,7 @@ def model_fitting(final,date):
     X=final.drop('Daily Generation (Active)(kWh)',axis=1)
     Y=final['Daily Generation (Active)(kWh)']
     x_train,x_test,y_train,y_test=train_test_split(X,Y,shuffle=False)
+
     kmeans=KMeans(n_clusters=5)
     x_train["Cluster"]=kmeans.fit_predict(x_train[['temp', 'dew', 'humidity', 'winddir',
        'cloudcover', 'visibility']])
@@ -80,6 +81,7 @@ def def_linearReg(x_train,y_train,x_test,y_test):
     r2_lr=r2_score(y_true=y_test,y_pred=y_predict)
     print('r2 score for linear regression: ',r2_lr)
     return [r2_lr,l]
+
 
 def def_decionTreeReg(x_train,y_train,x_test,y_test):
     dt=DecisionTreeRegressor(max_depth=3)
