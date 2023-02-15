@@ -36,8 +36,6 @@ def model_fitting(final,date):
     Y=final['Daily Generation (Active)(kWh)']
     x_train,x_test,y_train,y_test=train_test_split(X,Y,shuffle=False)
 
-
-    
     """
     kmeans=KMeans(n_clusters=5)
     x_train["Cluster"]=kmeans.fit_predict(x_train[['temp', 'dew', 'humidity', 'winddir',
@@ -63,7 +61,7 @@ def model_fitting(final,date):
     pred["Cluster"]=kmeans.fit_predict(pred_result[['temp', 'dew', 'humidity', 'winddir','cloudcover', 'visibility']])
     pred=pred.drop(['temp', 'dew', 'humidity', 'winddir','cloudcover', 'visibility'],axis=1)
     """
-    print('XGBoost Reg with r2 score ',xgBoostReg[0])
+    print('XGBoost Reg with r2 score: ',xgBoostReg[0])
     sol=xgBoostReg[1].predict(pred)
     print(sol[-1])
     
