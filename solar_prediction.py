@@ -27,7 +27,7 @@ def dataSetProcessing(date):
     final.dropna(inplace=True)
     final.drop('Unnamed: 0',axis=1,inplace=True)
     final.rename(columns = {'Date':'no_of_days'}, inplace = True)
-    final.drop(['DC total voltage (v)','DC total current(A)','AC total voltage (v)','windspeed','precip','windgust','no_of_days',],inplace=True,axis=1)
+    final.drop(['DC total voltage (v)','DC total current(A)','AC total voltage (v)','windspeed','precip','windgust','no_of_days','sealevelpressure'],inplace=True,axis=1)
     res=model_fitting(final,date)
     return(str(res))
 
@@ -36,6 +36,9 @@ def model_fitting(final,date):
     Y=final['Daily Generation (Active)(kWh)']
     x_train,x_test,y_train,y_test=train_test_split(X,Y,shuffle=False)
 
+
+    
+    """
     kmeans=KMeans(n_clusters=5)
     x_train["Cluster"]=kmeans.fit_predict(x_train[['temp', 'dew', 'humidity', 'winddir',
        'cloudcover', 'visibility']])
@@ -46,31 +49,24 @@ def model_fitting(final,date):
     linearReg=def_linearReg(x_train,y_train,x_test,y_test)
     decisionTreeReg=def_decionTreeReg(x_train,y_train,x_test,y_test)
     gradientBoostReg=def_gradientBoostReg(x_train,y_train,x_test,y_test)
+    """
+
     xgBoostReg=def_xgBoost(x_train,y_train,x_test,y_test)
     get_future_weather()
     pred_result=get_solar_output(date)
     label_encoder = LabelEncoder()
     pred_result['Time']= label_encoder.fit_transform(pred_result['Time'])
-    pred_result=pred_result[['Time','temp', 'dew', 'humidity', 'winddir','cloudcover', 'visibility','sealevelpressure','solarradiation']]
+    pred_result=pred_result[['Time','temp', 'dew', 'humidity', 'winddir','cloudcover', 'visibility','solarradiation']]
     pred=pred_result
+
+    """
     pred["Cluster"]=kmeans.fit_predict(pred_result[['temp', 'dew', 'humidity', 'winddir','cloudcover', 'visibility']])
     pred=pred.drop(['temp', 'dew', 'humidity', 'winddir','cloudcover', 'visibility'],axis=1)
-    if(linearReg[0]>=decisionTreeReg[0] and linearReg[0]>=gradientBoostReg[0] and linearReg[0]>=xgBoostReg[0]):
-        print('Linear Reg with r2 score ',linearReg[0])
-        sol=linearReg[1].predict(pred)
-        print(sol[-1])
-    elif(decisionTreeReg[0]>=linearReg[0] and decisionTreeReg[0]>=gradientBoostReg[0] and decisionTreeReg[0]>=xgBoostReg[0]):
-        print('Decision Reg with r2 score ',decisionTreeReg[0])
-        sol=decisionTreeReg[1].predict(pred)
-        print(sol[-1])
-    elif(gradientBoostReg[0]>=linearReg[0] and gradientBoostReg[0]>=decisionTreeReg[0] and gradientBoostReg[0]>=xgBoostReg[0]):
-        print('Gradient Boost Reg with r2 score ',gradientBoostReg[0])
-        sol=gradientBoostReg[1].predict(pred)
-        print(sol[-1])
-    else:
-        print('XGBoost Reg with r2 score ',xgBoostReg[0])
-        sol=xgBoostReg[1].predict(pred)
-        print(sol[-1])
+    """
+    print('XGBoost Reg with r2 score ',xgBoostReg[0])
+    sol=xgBoostReg[1].predict(pred)
+    print(sol[-1])
+    
     return sol[-1]
         
 
@@ -109,8 +105,13 @@ def def_xgBoost(x_train,y_train,x_test,y_test):
 
 def get_future_weather():        
     try: 
-        ResultBytes = urllib.request.urlopen("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next7days?unitGroup=metric&include=hours&key=HTXNURB3NT3SGJHKHUBK63QGK&contentType=csv")
+        ResultBytes = urllib.request.urlopen("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next30days?unitGroup=us&include=hours&key=HTXNURB3NT3SGJHKHUBK63QGK&contentType=csv")
         
+        """
+    
+        https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next7days?unitGroup=metric&include=hours&key=HTXNURB3NT3SGJHKHUBK63QGK&contentType=csv
+    
+        """
         # Parse the results as CSV
         CSVText = pd.read_csv(ResultBytes)
         CSVText.to_csv('predicted_weather.csv')
