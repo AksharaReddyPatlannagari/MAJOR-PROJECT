@@ -10,12 +10,19 @@ from flask import render_template
 import cgi
 from datetime import datetime
 import solar_prediction 
+import os
+
+PEOPLE_FOLDER = os.path.join('static', 'images')
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
 
 @app.route('/')
 def index():
-  return render_template('index.html')
+  pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'pic1.jpg')
+  pic2 = os.path.join(app.config['UPLOAD_FOLDER'], 'pic2.jpg')
+  pic3 = os.path.join(app.config['UPLOAD_FOLDER'], 'pic3.jpg')
+  return render_template("index.html", user_pic1 = pic1, user_pic2 = pic2, user_pic3 = pic3)
 
 @app.route('/sol', methods=['POST','GET'])
 def getDate():
