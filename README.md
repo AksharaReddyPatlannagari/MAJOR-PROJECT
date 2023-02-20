@@ -10,6 +10,12 @@ https://towardsdatascience.com/why-feature-correlation-matters-a-lot-847e8ba439c
 
 https://builtin.com/data-science/when-and-why-standardize-your-data 
 
+https://www.javatpoint.com/principal-component-analysis
+
+https://www.youtube.com/watch?v=QdBy02ExhGI
+
+https://www.projectpro.io/recipes/extract-features-using-pca-in-python
+
 ## Ideas
 
 classify to similar time intervals
