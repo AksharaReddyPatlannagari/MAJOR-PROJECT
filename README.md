@@ -14,6 +14,8 @@ https://www.javatpoint.com/principal-component-analysis
 
 https://www.youtube.com/watch?v=QdBy02ExhGI
 
+https://www.projectpro.io/recipes/extract-features-using-pca-in-python
+
 ## Ideas
 
 classify to similar time intervals
