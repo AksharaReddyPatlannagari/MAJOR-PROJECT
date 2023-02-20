@@ -10,6 +10,8 @@ https://towardsdatascience.com/why-feature-correlation-matters-a-lot-847e8ba439c
 
 https://builtin.com/data-science/when-and-why-standardize-your-data 
 
+https://www.javatpoint.com/principal-component-analysis
+
 ## Ideas
 
 classify to similar time intervals
