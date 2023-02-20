@@ -12,6 +12,8 @@ https://builtin.com/data-science/when-and-why-standardize-your-data
 
 https://www.javatpoint.com/principal-component-analysis
 
+https://www.youtube.com/watch?v=QdBy02ExhGI
+
 ## Ideas
 
 classify to similar time intervals
