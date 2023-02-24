@@ -16,6 +16,8 @@ https://www.youtube.com/watch?v=QdBy02ExhGI
 
 https://www.projectpro.io/recipes/extract-features-using-pca-in-python
 
+https://365datascience.com/tutorials/python-tutorials/pca-k-means/
+
 ## Ideas
 
 classify to similar time intervals
