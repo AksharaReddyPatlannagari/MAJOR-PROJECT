@@ -64,7 +64,6 @@ def model_fitting(final,date):
     print('XGBoost Reg with r2 score: ',xgBoostReg[0])
     sol=xgBoostReg[1].predict(pred)
     print(sol[-1])
-    
     return sol[-1]
         
 
@@ -103,7 +102,7 @@ def def_xgBoost(x_train,y_train,x_test,y_test):
 
 def get_future_weather():        
     try: 
-        ResultBytes = urllib.request.urlopen("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next30days?unitGroup=us&include=hours&key=HTXNURB3NT3SGJHKHUBK63QGK&contentType=csv")
+        ResultBytes = urllib.request.urlopen("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next30days?unitGroup=metric&include=hours&key=768FEXAYRHYQKK5678HWL4LSM&contentType=csv")
         
         """
     
@@ -127,7 +126,7 @@ def get_solar_output(date):
     pred_weather=pred_weather.rename(columns = {'datetime':'Time'})
     pred_weather=obj_to_DT(pred_weather,'Time')
     pred_weather=pred_weather[pred_weather['Time'].apply(lambda x: x.time()) < time(19,00,00)]
-    pred_weather=pred_weather[pred_weather['Time'].apply(lambda x: x.time()) > time(6,00)]
+    pred_weather=pred_weather[pred_weather['Time'].apply(lambda x: x.time()) >= time(6,00)]
     pred_result=[]
     for i in range(len(pred_weather)):
         text= pred_weather.iloc[i]

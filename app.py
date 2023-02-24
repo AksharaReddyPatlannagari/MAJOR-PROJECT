@@ -27,7 +27,11 @@ def index():
 @app.route('/sol', methods=['POST','GET'])
 def getDate():
   date=request.form['date']
-  return ('The total solar generation on '+date+' is:  ' +solar_prediction.dataSetProcessing(date)+' kWh ')
+  pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'pic1.jpg')
+  pic2 = os.path.join(app.config['UPLOAD_FOLDER'], 'pic2.jpg')
+  pic3 = os.path.join(app.config['UPLOAD_FOLDER'], 'pic3.jpg')
+  solarOutput= solar_prediction.dataSetProcessing(date)
+  return render_template("output.html",solarOutput=solarOutput,date=date, user_pic1 = pic1, user_pic2 = pic2, user_pic3 = pic3)
 
 if __name__ == '_main_':
     app.run(debug=True)
