@@ -27,7 +27,7 @@ def dataSetProcessing(date):
     final.dropna(inplace=True)
     final.drop('Unnamed: 0',axis=1,inplace=True)
     final.rename(columns = {'Date':'no_of_days'}, inplace = True)
-    final.drop(['DC total voltage (v)','DC total current(A)','AC total voltage (v)','windspeed','precip','windgust','no_of_days','sealevelpressure'],inplace=True,axis=1)
+    final.drop(['DC total voltage (v)','DC total current(A)','AC total voltage (v)','windspeed','precip','windgust','no_of_days','sealevelpressure','AC Output Frequency R(Hz)'],inplace=True,axis=1)
     res=model_fitting(final,date)
     return(str(res))
 
