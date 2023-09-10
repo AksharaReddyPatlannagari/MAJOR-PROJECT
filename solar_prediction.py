@@ -102,9 +102,12 @@ def def_xgBoost(x_train,y_train,x_test,y_test):
 
 def get_future_weather():        
     try: 
-        ResultBytes = urllib.request.urlopen("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next30days?unitGroup=metric&include=hours&key=768FEXAYRHYQKK5678HWL4LSM&contentType=csv")
+        ResultBytes = urllib.request.urlopen("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next30days?unitGroup=metric&include=hours&key=GNPVKXQF5H75UD3PW6L8B9WK3&contentType=csv")
         
         """
+        768FEXAYRHYQKK5678HWL4LSM
+
+        https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987?unitGroup=metric&include=hours&key=GNPVKXQF5H75UD3PW6L8B9WK3&contentType=csv
     
         https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/17.4116%2C%2078.3987/next7days?unitGroup=metric&include=hours&key=HTXNURB3NT3SGJHKHUBK63QGK&contentType=csv
     
